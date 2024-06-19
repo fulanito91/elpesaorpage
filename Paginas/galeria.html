@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos - El Pesaor</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container-fluid {
+            padding: 20px;
+        }
+        h1 {
+            color: #d2691e;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 3em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery .card {
+            border: none;
+            flex: 0 0 calc(33.333% - 10px);
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .card-body {
+            background-color: #ffe4c4;
+            text-align: center;
+            padding: 10px;
+        }
+        .card-title {
+            color: #d2691e;
+            margin-bottom: 0;
+            font-size: 1.2em;
+        }
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #d2691e;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #a0522d;
+        }
+        @media (max-width: 767px) {
+            .gallery .card {
+                flex: 0 0 calc(50% - 10px);
+            }
+        }
+        @media (max-width: 575px) {
+            .gallery .card {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <h1>Galería de Fotos - El Pesaor</h1>
+        <a href="../index.html" class="back-button">Volver a la Página Principal</a>
+        <div class="gallery">
+            <div class="card">
+                <a href="../imagenes/galeria.jpg" data-lightbox="galeria" data-title="Imagen 1">
+                    <img src="../imagenes/galeria.jpg" alt="Imagen 1">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Imagen 1</h5>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../imagenes/pic1.jpg" data-lightbox="galeria" data-title="Imagen 2">
+                    <img src="../imagenes/pic1.jpg" alt="Imagen 2">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Imagen 2</h5>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../imagenes/pic5.jpg" data-lightbox="galeria" data-title="Imagen 3">
+                    <img src="../imagenes/pic5.jpg" alt="Imagen 3">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Imagen 3</h5>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../imagenes/pic6.jpg" data-lightbox="galeria" data-title="Imagen 4">
+                    <img src="../imagenes/pic6.jpg" alt="Imagen 4">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Imagen 4</h5>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../imagenes/pic7.jpg" data-lightbox="galeria" data-title="Imagen 5">
+                    <img src="../imagenes/pic7.jpg" alt="Imagen 5">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Imagen 5</h5>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../imagenes/tapa01.jpg" data-lightbox="galeria" data-title="Imagen 6">
+                    <img src="../imagenes/tapa01.jpg" alt="Imagen 6">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Imagen 6</h5>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../imagenes/tapa02.jpg" data-lightbox="galeria" data-title="Imagen 7">
+                    <img src="../imagenes/tapa02.jpg" alt="Imagen 7">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Imagen 7</h5>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../imagenes/tapa03.jpg" data-lightbox="galeria" data-title="Imagen 8">
+                    <img src="../imagenes/tapa03.jpg" alt="Imagen 8">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Imagen 8</h5>
+                </div>
+            </div>
+            <div class="card">
+                <a href="../imagenes/tapa05.jpg" data-lightbox="galeria" data-title="Imagen 9">
+                    <img src="../imagenes/tapa05.jpg" alt="Imagen 9">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Imagen 9</h5>
+                </div>
+            </div>
+            <!-- Agrega más columnas con imágenes según sea necesario -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>

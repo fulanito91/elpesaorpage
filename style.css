@@ -1,0 +1,28 @@
+#banner{
+    background: url(./imagenes/gotele.jfif);
+   
+    
+}
+#banner h1 {
+    font-weight: bold;
+    color: #d2691e;
+    font-size: 2.5rem;
+
+}
+#banner p{
+    font-weight: bold;
+    color: #d2691e;
+    font-size: 1.5rem;
+}
+h2 { 
+    text-align: center;
+    
+}
+
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+
+
